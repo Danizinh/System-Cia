@@ -1,0 +1,204 @@
+<div class="main">
+  <div class="profile-pic" id="profilePic">
+    <span class="placeholder" id="initials">HV</span>
+    <img id="profileImage" style="display: none" alt="Profile Picture" />
+    <button class="edit-btn">&#9998;</button>
+  </div>
+
+  <div class="profile-details">
+    <div class="name">
+      Helen Voizhicki
+      <span class="status">Active</span>
+    </div>
+  </div>
+
+  <div class="profile-info">
+    <div><span>Role:</span> <span>User</span></div>
+    <div><span>Position:</span> <span>Head of HR Department</span></div>
+    <div><span>E-mail:</span> <span>helenvoizhicki@gmail.com</span></div>
+    <div><span>Phone:</span> <span>+7 (291) 255 58 43</span></div>
+    <div><span>Company:</span> <span>LoremIpsum Group</span></div>
+  </div>
+
+  <div class="buttons">
+    <label for="fileInput" class="upload-btn">Upload New Photo</label>
+    <button class="delete-btn" id="deleteBtn">Delete</button>
+  </div>
+</div>
+<input type="file" id="fileInput" style="display: none" />
+<style>
+  .main {
+    background-color: rgba(255, 225, 225, 0.1);
+    width: 70vh;
+    height: 74vh;
+    padding: 2rem;
+    box-shadow: 5px 5px 15px #000;
+    font-weight: bold;
+    margin-right: 36px !important;
+    width: 450px;
+    max-width: 55vw;
+    height: 386px;
+    margin-bottom: 18px;
+    margin-left: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .profile-pic {
+    width: 100px;
+    height: 100px;
+    background-color: #ddd;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto 15px;
+  }
+
+  .profile-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .profile-pic .placeholder {
+    font-size: 40px;
+    color: #fff;
+    text-transform: uppercase;
+  }
+
+  .profile-pic .edit-btn {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    background-color: #ff7043;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+  }
+
+  .profile-pic .edit-btn:hover {
+    background-color: #ff5722;
+  }
+
+  .profile-details {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .profile-details .name {
+    font-weight: bold;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .profile-details .status {
+    background-color: #00d084;
+    color: white;
+    padding: 3px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+  .profile-info {
+    font-size: 14px;
+    color: #555;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    text-align: left;
+    margin-top: 10px;
+    padding: 0 15px;
+  }
+
+  .profile-info div {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  .profile-info div span:first-child {
+    font-weight: bold;
+  }
+
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
+  }
+
+  .social-icons a {
+    width: 24px;
+    height: 24px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #555;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+    font-size: 18px;
+  }
+
+  .social-icons a:hover {
+    background-color: #6247ea;
+    color: white;
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 14px;
+  }
+
+  .upload-btn,
+  .delete-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+
+  .upload-btn {
+    background-color: #6247ea;
+    color: white;
+    transition: background-color 0.3s ease;
+  }
+
+  .upload-btn:hover {
+    background-color: #533ed6;
+  }
+
+  .delete-btn {
+    background-color: transparent;
+    color: #6247ea;
+    border: 2px solid #6247ea;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  .delete-btn:hover {
+    background-color: #6247ea;
+    color: white;
+  }
+
+  #fileInput {
+    display: none;
+  }
+</style>
